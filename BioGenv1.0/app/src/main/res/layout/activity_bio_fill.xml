@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.kbwebs.kelsi.biogen.BioFill">
+
+        <TextView
+            android:id="@+id/FName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/InFName"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/LName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LName"
+            tools:layout_editor_absoluteX="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/InLName"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/School"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/School"
+            app:layout_constraintBottom_toBottomOf="@+id/InSchool"
+            tools:layout_editor_absoluteX="0dp"
+            tools:text="@string/HSchool" />
+
+        <TextView
+            android:id="@+id/GradYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GradYear"
+            tools:layout_editor_absoluteX="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/InGradYear"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/Degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Degree"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/degree"
+            app:layout_constraintTop_toTopOf="@+id/degree"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/Major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Major"
+            tools:layout_editor_absoluteX="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/InMajor"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/Activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Activities"
+            tools:layout_editor_absoluteX="0dp"
+            app:layout_constraintTop_toTopOf="@+id/InActivities"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/Button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:onClick="onCreateBio"
+            android:layout_marginTop="598dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.553" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Title"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/InFName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/HFName"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <EditText
+            android:id="@+id/InLName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/HLName"
+            android:inputType="textPersonName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InFName" />
+
+        <EditText
+            android:id="@+id/InSchool"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/HSchool"
+            android:inputType="textPersonName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InLName" />
+
+        <EditText
+            android:id="@+id/InGradYear"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:hint="@string/HGradYear"
+            android:inputType="textPersonName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InSchool"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="208dp" />
+
+        <Spinner
+            android:id="@+id/InMajor"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:entries="@array/majors"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/InGradYear"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/degree" />
+
+        <com.kbwebs.kelsi.biogen.RadioGridGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="250dp"
+            android:layout_height="166dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/InGradYear"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/degree">
+            <TableRow android:layout_marginTop="0dp">
+                <RadioButton
+                    android:id="@+id/CBS"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CBS"
+                    app:layout_constraintLeft_toLeftOf="@+id/InGradYear"
+                    app:layout_constraintTop_toBottomOf="@+id/CBA" />
+
+                <RadioButton
+                    android:id="@+id/CMS"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CMS"
+                    app:layout_constraintLeft_toRightOf="@+id/CBS"
+                    app:layout_constraintRight_toLeftOf="@+id/CJD"
+                    app:layout_constraintTop_toBottomOf="@+id/CMA" />
+
+                <RadioButton
+                    android:id="@+id/CPHD"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CPhD"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/InGradYear" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="0dp">
+                <RadioButton
+                    android:id="@+id/CBAS"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CBAS"
+                    app:layout_constraintLeft_toLeftOf="@+id/InGradYear"
+                    app:layout_constraintTop_toBottomOf="@+id/CBS" />
+
+                <RadioButton
+                    android:id="@+id/CMA"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CMA"
+                    app:layout_constraintLeft_toRightOf="@+id/CBA"
+                    app:layout_constraintRight_toLeftOf="@+id/CPHD"
+                    app:layout_constraintTop_toBottomOf="@+id/InGradYear" />
+
+                <RadioButton
+                    android:id="@+id/CMD"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CMD"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CJD" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="0dp">
+
+                <RadioButton
+                    android:id="@+id/CBA"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CBA"
+                    app:layout_constraintLeft_toLeftOf="@+id/InGradYear"
+                    app:layout_constraintTop_toBottomOf="@+id/InGradYear" />
+
+                <RadioButton
+                    android:id="@+id/CMFA"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CMFA"
+                    app:layout_constraintLeft_toRightOf="@+id/CBFA"
+                    app:layout_constraintRight_toLeftOf="@+id/CDDS"
+                    app:layout_constraintTop_toBottomOf="@+id/CMBA" />
+
+                <RadioButton
+                    android:id="@+id/CDDS"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CDDS"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CMD" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="0dp">
+
+                <RadioButton
+                    android:id="@+id/CBFA"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CBFA"
+                    app:layout_constraintLeft_toLeftOf="@+id/InGradYear"
+                    app:layout_constraintTop_toBottomOf="@+id/CBA" />
+
+                <RadioButton
+                    android:id="@+id/CMBA"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CMBA"
+                    app:layout_constraintLeft_toRightOf="@+id/CBAS"
+                    app:layout_constraintRight_toLeftOf="@+id/CMD"
+                    app:layout_constraintTop_toBottomOf="@+id/CMS" />
+
+                <RadioButton
+                    android:id="@+id/CJD"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/CJD"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CPHD" />
+            </TableRow>
+
+        </com.kbwebs.kelsi.biogen.RadioGridGroup>
+
+        <EditText
+            android:id="@+id/InActivities"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InMajor" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

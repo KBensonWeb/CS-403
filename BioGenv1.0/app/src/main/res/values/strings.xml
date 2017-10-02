@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">BioGen</string>
+    <string name="FName">First Name</string>
+    <string name="LName">Last Name</string>
+    <string name="School">School</string>
+    <string name="GradYear">Year of Graduation</string>
+    <string name="Degree">Degree</string>
+    <string name="Major">Major</string>
+    <string name="Activities">Favorite Activities</string>
+    <string name="Button">Create</string>
+    <string name="Title">Create Your Bio!!</string>
+    <string name="HFName">First Name</string>
+    <string name="HLName">Last Name</string>
+    <string name="HSchool">School</string>
+    <string name="HGradYear">Year of Graduation</string>
+    <string name="HDegree">Degree</string>
+    <string name="HMajor">Major</string>
+    <string name="HActivities">Favorite Activities</string>
+    <string name="CBS">B.S.</string>
+    <string name="CBA">B.A.</string>
+    <string name="CBAS">BAS</string>
+    <string name="CBFA">BFA</string>
+    <string name="CMA">M.A.</string>
+    <string name="CMBA">MBA</string>
+    <string name="CMS">M.S.</string>
+    <string name="CMFA">MFA</string>
+    <string name="CPhD">Ph.D.</string>
+    <string name="CJD">J.D.</string>
+    <string name="CMD">M.D.</string>
+    <string name="CDDS">DDS</string>
+    <string-array name="majors">
+        <item>Computer Science</item>
+        <item>Computer Information Systems</item>
+        <item>Cyber Security</item>
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Chemistry</item>
+        <item>Biology</item>
+        <item>Finance</item>
+        <item>Accounting</item>
+        <item>English</item>
+        <item>Art</item>
+        <item>Criminal Justice</item>
+        <item>Kinesthesiology</item>
+        <item>Nursing</item>
+        <item>Applied Mathematics</item>
+        <item>Athletic Training</item>
+        <item>Biochemistry</item>
+        <item>Communication</item>
+        <item>Economics</item>
+        <item>Theater</item>
+        <item>Creative Writing</item>
+        <item>History</item>
+        <item>Political Science</item>
+        <item>Exercise Science</item>
+        <item>French</item>
+        <item>Graphic Design</item>
+        <item>Philosophy</item>
+        <item>Psychology</item>
+        <item>Law</item>
+    </string-array>
+</resources>
